@@ -7,7 +7,9 @@ using namespace std;
 
 int main() {
 
-    // Nhap 2 so, in ra tong hieu tich thuong
+    // HPNY
+    int h, m; cin >> h >> m;
+    cout << 1440 - (h * 60 - m) << endl;
 
     return 0; 
 }
