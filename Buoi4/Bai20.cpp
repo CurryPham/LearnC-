@@ -1,0 +1,57 @@
+#include <iostream>
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+
+    int n; cin >> n;
+    for(int i = 1; i<=n; i++){
+        for(int j = 1; j<= i; j++){
+            cout << "*";
+        }
+        cout << endl;
+    }
+
+    for(int i = 0; i<=n; i++){
+        for(int j = 1; j<= n - i + 1; j++){
+            cout << "*";
+        }
+        cout << endl;
+    }
+
+    for(int i = n; i >= 1; i--){
+        for(int j = 1; j <= i; j++){
+            cout << "*";
+        }
+        cout << endl;
+    }
+
+    for(int i = 1; i <= n; i++){
+        for(int j = 1;j <= n; j++){
+            if(j <= n - 1) cout << " ";
+            else cout << "*";
+        }
+        cout << endl;
+    }
+
+    for(int i = 1; i <= n; i++){
+        for(int j = 1;j <= n; j++){
+            if(j <= i) cout << " ";
+            else cout << "*";
+        }
+        cout << endl;
+    }
+
+    for(int i = 1; i<=n; i++){
+        for(int j = 1; j<= i; j++){
+            if(i == 1 || i == n || j == 1 || i ==j) cout << "*";
+            else cout << " ";
+        }
+        cout << endl;
+    }
+
+    return 0; 
+}
